@@ -1,4 +1,6 @@
 import rickymorty from './data/dataFetch';
+import './components/indexpadre';
+import myCharacter from './components/character/character';
 
 class AppContainer extends HTMLElement {
 	constructor() {
@@ -16,14 +18,17 @@ class AppContainer extends HTMLElement {
 
 	render(data: any) {
 		if (this.shadowRoot) {
-			this.shadowRoot.innerHTML += `<h1>${data.name}</h1>
-      <h3>${data.status}</h3>
-      <h3>${data.species}</h3>
-      <h3>${data.type}</h3>
-      <h3>${data.origin}</h3>
-      <h3>${data.episode}</h3>
-      <br>`;
+			this.shadowRoot.innerHTML += `<character name '${data.name}'
+			image'${data.image}'
+			status '${data.status}'
+			species '${data.species}'
+			type '${data.type}'
+			origin '${data.origin.name}'
+			First episode '${data.firstEpisode}'
+			>
+			</character>`;
 		}
 	}
 }
+
 customElements.define('app-container', AppContainer);
