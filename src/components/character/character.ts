@@ -1,3 +1,5 @@
+import styles from './character.css';
+
 export enum Attribute {
 	'name' = 'name',
 	'image' = 'image',
@@ -62,14 +64,11 @@ class Character extends HTMLElement {
   <h4>${this.episode}</h4>
   </section>`;
 		}
+		const cssCharacter = this.ownerDocument.createElement('style');
+		cssCharacter.innerHTML = styles;
+		this.shadowRoot?.appendChild(cssCharacter);
 	}
 }
 
 export default Character;
 customElements.define('my-character', Character);
-
-//		<section id="input">
-//<p>Number of Characters:</p>
-//<input type="number" id="enter" name="enter">
-//<button id="DoneButton">Done</button>
-//</section>
