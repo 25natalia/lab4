@@ -50,6 +50,8 @@ class Character extends HTMLElement {
 	render() {
 		if (this.shadowRoot) {
 			this.shadowRoot.innerHTML = `
+
+
   <section>
   <h1>${this.name}</h1>
   <img src='${this.image}'></img>
@@ -65,3 +67,9 @@ class Character extends HTMLElement {
 
 export default Character;
 customElements.define('my-character', Character);
+
+//		<section id="input">
+//<p>Number of Characters:</p>
+//<input type="number" id="enter" name="enter">
+//<button id="DoneButton">Done</button>
+//</section>
