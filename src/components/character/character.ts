@@ -57,11 +57,11 @@ class Character extends HTMLElement {
   <section>
   <h1>${this.name}</h1>
   <img src='${this.image}'></img>
-  <h3>${this.status}</h3>
-  <h3>${this.species}</h3>
-  <h3>${this.type}</h3>
-  <h4>${this.origin}</h4>
-  <h4>${this.episode}</h4>
+  <h3>Status: ${this.status}</h3>
+  <h3>Species: ${this.species}</h3>
+  <h3>Type:${this.type}</h3>
+  <h3>Origin:${this.origin}</h3>
+  <h3>Episode name:${this.episode}</h3>
   </section>`;
 		}
 		const cssCharacter = this.ownerDocument.createElement('style');

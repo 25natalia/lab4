@@ -1,7 +1,30 @@
 h1 {
-	background-color: brown;
+	font-family: 'Palanquin Dark', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+}
+h3 {
+	font-family: 'Palanquin Dark', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	padding-left: 40px;
 }
 
-* {
-	background-color: aqua;
+img {
+	border-radius: 25px;
+	margin-left: 40px;
 }
+
+section {
+	background-color: rgb(240, 240, 240);
+	height: 600px;
+	width: 400px;
+	border-radius: 40px;
+	flex-wrap: wrap;
+	margin-left: 50px;
+}
+
+

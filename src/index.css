@@ -1,0 +1,18 @@
+#inputNumber {
+	height: 40px;
+	width: 300px;
+	border-radius: 10px;
+	border-style: none;
+	background-color: rgb(240, 240, 240);
+	margin: 50px;
+	color: black;
+}
+
+input {
+	height: 40px;
+	width: 100px;
+	border-radius: 10px;
+	border-style: none;
+	background-color: rgb(85, 90, 242);
+	color: aliceblue;
+}
